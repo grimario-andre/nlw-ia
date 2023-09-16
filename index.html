@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <title>Short Summary</title>
+  </head>
+  <body>
+    <div id="app">
+      <img src="./public/logo.svg" alt="logo">
+      <h1>Shorts Summary</h1>
+
+      <!-- FORM -->
+      <form id="form" action="">
+        <input type="url" name="url" id="url" placeholder="URL do vídeo">
+        <button title="Download"> <i class="ph ph-play"></i> </button>
+      </form>
+
+      <!-- RESUME -->
+      <h2>Resumo</h2>
+      <p id="content" class="placeholder">Escolha um shorts para resumir</p>
+    </div>
+
+    <footer>
+      <p>&copy; <span id="anoAtual"></span> Grisalho Dev</p>
+    </footer>
+    <script type="module" src="./web/main.js"></script>
+  </body>
+</html>
