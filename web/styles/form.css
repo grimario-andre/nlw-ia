@@ -43,3 +43,105 @@
 #form > button > i:hover {
     background-color: #633bbc;
 }
+
+/* Estilos para telas menores ou iguais a 240x480 */
+@media (max-width: 240px) {
+    #form {
+      margin-top: 20px; /* Reduz a margem superior para economizar espaço */
+      display: flex;
+      flex-direction: column; /* Altera para layout de coluna para melhorar a adaptação */
+      gap: 8px; /* Reduz o espaçamento entre os elementos */
+    }
+  
+    #form > input {
+      height: 36px; /* Reduz a altura do campo de entrada */
+      width: 100%; /* Ocupa a largura total da tela */
+      border: none;
+      color: #fff;
+      background-color: #202024;
+      border-radius: 5px;
+      padding: 0 8px; /* Reduz o preenchimento */
+      font-size: 14px; /* Reduz o tamanho da fonte */
+      margin-top: 8px; /* Adiciona espaço superior entre os campos de entrada */
+    }
+  
+    #form > input:focus {
+      outline: none; /* Remove a borda de foco */
+    }
+  
+    #form > input:valid {
+      background-color: #202024;
+    }
+  
+    #form > button {
+      height: 36px; /* Reduz a altura do botão */
+      width: 36px; /* Reduz o tamanho do botão */
+      border: none;
+      border-radius: 50%; /* Torna o botão circular */
+      background-color: #8257e5;
+  
+      cursor: pointer;
+  
+      transition: background-color 0.2s; /* Adiciona transição de cor */
+    }
+  
+    #form > button > i {
+      font-size: 18px; /* Reduz o tamanho do ícone */
+      color: #fff;
+    }
+  
+    #form > button:hover {
+      background-color: #633bbc;
+    }
+  }
+
+  /* Estilos para telas maiores que 240x480 e menores ou iguais a 768x480 */
+@media (min-width: 241px) and (max-width: 768px) {
+    #form {
+      margin-top: 32px; /* Ajustei a margem para ficar mais apropriada em telas menores */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #form > input {
+      height: 48px;
+      width: 100%; /* Ocupar toda a largura disponível */
+      border: none;
+      color: #fff;
+      background-color: #202024;
+      border-radius: 5px;
+      padding: 0 12px;
+      font-size: 16px;
+      margin-bottom: 12px; /* Adicionei uma margem inferior para separar os campos */
+    }
+  
+    #form > input:focus {
+      outline: 2px solid #8257e5;
+    }
+  
+    #form > input:valid {
+      background-color: #202024;
+    }
+  
+    #form > button {
+      height: 48px;
+      width: 100%; /* Ocupar toda a largura disponível */
+      border: none;
+      border-radius: 5px;
+      background-color: #8257e5;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      margin-top: 12px; /* Adicionei uma margem superior para separar o botão dos campos */
+    }
+  
+    #form > button > i {
+      font-size: 24px;
+      color: #fff;
+    }
+  
+    #form > button:hover {
+      background-color: #633bbc;
+    }
+  }
+  

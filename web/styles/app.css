@@ -26,3 +26,72 @@
     user-select: none;
 }
 
+/* Estilos para telas menores ou iguais a 240x480 */
+@media (max-width: 240px) {
+    #app {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #app > h1 {
+      color: #996dff;
+      margin-top: 10px; /* Aumenta o espaço superior para melhor legibilidade */
+      font-size: 24px; /* Aumenta o tamanho da fonte para melhor legibilidade */
+    }
+  
+    #app > h2 {
+      align-self: flex-start;
+      margin-top: 20px; /* Aumenta o espaço superior */
+      font-size: 18px; /* Aumenta o tamanho da fonte */
+    }
+  
+    #app > p {
+      align-self: flex-start;
+      text-align: justify;
+      width: 100%; /* Ocupa a largura total da tela */
+      font-size: 16px; /* Aumenta o tamanho da fonte */
+      margin-top: 10px; /* Aumenta o espaço superior */
+      padding: 2px; /* Aumenta o espaçamento interno */
+    }
+  
+    #app .placeholder {
+      color: #7c7c8a;
+      user-select: none;
+      font-size: 14px; /* Aumenta o tamanho da fonte */
+    }
+  }
+
+/* Estilos para telas maiores que 240x480 e menores ou iguais a 768x480 */
+@media (min-width: 241px) and (max-width: 768px) {
+    #app {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #app > h1 {
+      color: #996dff;
+      margin-top: -5px;
+    }
+  
+    #app > h2 {
+      align-self: flex-start;
+      margin-top: 64px;
+      padding: 10px; /* Aumenta o espaçamento interno */
+    }
+  
+    #app > p {
+      align-self: flex-start;
+      text-align: justify;
+      width: 100%; /* Alterado para ocupar toda a largura disponível */
+      margin-top: -5px;
+      padding: 10px; /* Aumenta o espaçamento interno */
+    }
+  
+    #app .placeholder {
+      color: #7c7c8a;
+      user-select: none;
+    }
+  }
+  
